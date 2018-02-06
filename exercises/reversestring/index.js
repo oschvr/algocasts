@@ -21,16 +21,22 @@ function reverse(str) {
     return reversed.join('');
 
     */
-    /*
+    let arr = str.split('');
+    let reversed = '';
     for(let char of arr){
         reversed = char + reversed;
+        debugger;
     }
     return reversed;
-    */
+    
 
     //Solution 3 # Newest ES6 
-    return str.split('').reduce((rev, char)=> char + rev, '');
+    
+    //return str.split('').reduce((rev, char)=> char + rev, '');
 
 }
+
+// Added manually to debug, then 'node inspect {index.js}' and use 'repl' to open a debug session
+reverse('VR3');
 
 module.exports = reverse;
